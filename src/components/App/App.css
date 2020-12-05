@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-image: url("./woodblock.jpg");
+  background-color: #D8B879;
 }
 
 .App-header {
@@ -20,4 +22,21 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.grid-container {
+  background-image: url("./woodblock.jpg");
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem;
+  gap: 30px;
+  grid-auto-rows: 300px;
+  justify-content: center;
+  max-width: 250px;}
+
+.grid-child {
+  height: 250px;
+  width: 250px;
+  border-radius: 25px;
+  box-shadow: 5px 10px #A9A9A9;
 }
