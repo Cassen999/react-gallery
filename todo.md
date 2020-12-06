@@ -1,7 +1,7 @@
 ## ToDo for react gallery
 
 - Find some pictures and put them into gallery.data.js
-    - Give them id, title, description and path for
+    - [x] Give them id, title, description and path for
 
 - App
     - Import applicable files
