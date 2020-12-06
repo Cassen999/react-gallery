@@ -28,10 +28,13 @@ class App extends Component {
     })
   }
 
-  addLike = () => {
-    Axios.put('/like/:id')
+  addLike = (id) => {
+    // Add /like/${} in order to connect to router.put
+    // Use template literal ${id} to pass in the id to the function
+    Axios.put(`/gallery/like/${id}`)
     .then((response) => {
     console.log('PUT response', response)
+    this.getAllItems()
     })
     .catch( (error)=> {
     alert('Something bad happened in addLike PUT');
@@ -47,7 +50,7 @@ class App extends Component {
         </header>
         <br/>
         {/* Call GalleryList to render to DOM and set up prop */}
-        <GalleryList gallery={this.state.myGallery} like={this.addLike} />
+        <GalleryList gallery={this.state.myGallery} addLike={this.addLike} />
       </div>
     );
   }

@@ -15,7 +15,6 @@ class GalleryItem extends Component{
     }
 
     render(){
-        let key = this.props.item.id;
         return(
             <div>
                 <p onClick={this.toggleClick}>
@@ -25,7 +24,7 @@ class GalleryItem extends Component{
                     <p>
                         Likes: {this.props.item.likes}
                     </p>
-                    <button onClick={(event) => this.like(event, key)}>Like</button>
+                    <button onClick={(event) => this.props.addLike(this.props.item.id)}>Like</button>
                 </>
             </div>
         )

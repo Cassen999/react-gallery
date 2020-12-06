@@ -11,7 +11,7 @@ class GalleryList extends Component{
                     {/* Call the props from App to get gallery items.
                     Call GalleryItem and create prop to use in GalleryItem */}
                     {this.props.gallery.map(gallery => (
-                        <GalleryItem item={gallery} key={gallery.id}/>
+                        <GalleryItem item={gallery} addLike={this.props.addLike} key={gallery.id}/>
                     ))}
                 </div>
             </div>

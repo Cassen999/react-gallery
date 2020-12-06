@@ -20,11 +20,11 @@
 - GalleryItem (Send the image and handling the conditionals)
     - [x] Take in the data props from GalleryList
     - [x] Export to GalleryList to use in App render function
-    - [] Make each item a conditional onClick
-        - [] The click will toggle displaying the image and the description
-    - [] Make a like button and an area to display how many likes each image has
-    - [] Like button calls an axios put function to update like count
-    - [] Call the getAllItems function here so that the DOM refreshes on like button click
+    - [x] Make each item a conditional onClick
+        - [x] The click will toggle displaying the image and the description
+    - [x] Make a like button and an area to display how many likes each image has
+    - [x] Like button calls an axios put function to update like count
+    - [x] Call the getAllItems function here so that the DOM refreshes on like button click
 
 
 
